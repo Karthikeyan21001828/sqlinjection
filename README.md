@@ -27,29 +27,29 @@ Injection vulnerabilities to sidestep application safety efforts. They can circu
 
 Identify IP address using ifconfig in Metasploitable2
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/6982d9a0-a781-44ce-af29-26dbde20403e)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/e311635e-016a-4cc0-9f4b-647802c68f40)
 
 Use the above ip address to access the apache webserver of Metasploitable2 from kali linux. In Kali Linux use the ip address in a web browser.
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/4259c9bf-1d8e-48ff-926f-88345c5e98f4)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/dc846735-f966-4b5e-b3fc-40ac4069efb0)
 
 Select Multidae from the menu listed as shown above. You will get the page as displayed below:
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/a62f6407-224d-493d-b981-a2d1dad7ed39)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/cfcc3587-e946-49fc-88cf-2c8349070218)
 
 Click on the menu Login/Register and register for an account
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/45352bbd-0c8b-4db1-a8dd-9f1f9f0de78c)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/7984d3d4-9e17-4bb4-89cc-0305d1f0967c)
 
 Click on the link “Please register here”
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/7cec22ca-e53d-4015-a42e-bafde0ff29e5)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/91614273-6e2d-4077-b741-8e25b21d3acf)
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/d66e3680-6a0f-4aaf-8298-b985c59569d2)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/d055537a-069a-4860-af5b-7a2ff1e03533)
 
 Click on “Create Account” to display the following page:
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/f3909cec-9a6c-4732-94dc-c66af1c5f618)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/76ad51db-a3aa-495c-be3e-03c8b052d0bb)
 
 The login structure we will use in our examples is straightforward. It contains two input fields (username and password), which are both vulnerable. The back-end content creates a query to approve the username 
 
@@ -59,11 +59,11 @@ and secret key given by the client. Here is an outline of the page rationale:
  
  For the username put “ganesh” or “anything” and for the password put (anything’ or ‘1’=’1) or (admin’ or ‘1’=’1) then try to log in, and you’ll be presented with an admin login page.
  
- ![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/0ea3e8ec-a3af-44ed-9537-dd0ad8496080)
+ ![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/1d5964ea-6099-4ee1-b8be-652d50084b59)
 
  Click “Login”. The logged in page will show as below:
 
- ![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/78d31bae-9c50-4a56-8195-6a8ecbb2dbf0)
+ ![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/230defd2-d26e-45ee-9c5c-348a12376927)
 
  ## Bypassing login field
  The username field is vulnerable. Put (ganesh’ #) or (ganesh’--) in the username field and hit “Enter” to log in. We use “#” or “--” to comment everything in the query sentence that comes after the username 
@@ -74,11 +74,11 @@ gains access. This technique will make the “WHERE” clause true only for one 
 
 Now after logging out you will see the login page. In the login page give ganesh’ # . You can see the page now enters into the administrator page as before when giving the password.
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/97d81a87-365d-4077-ae83-27126a94c86a)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/e0dbe18e-083a-4795-8598-4b75c9721161)
 
 Click the login button and you will see it enter into the administrator page.
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/3db8dbd7-0611-4c1c-bc2c-7eeb7718494d)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/94e3dce1-e51f-47ea-9e7c-96f824cf80b3)
 
 ## Union-based SQL injection
 UNION-based SQL injection assaults enable the analyzer to extract data from the database effectively. Since the “UNION” operator must be utilized if the two inquiries have precisely the same structure, the 
@@ -89,21 +89,21 @@ we will be using the “User Info” page from Mutillidae to perform a Union-Bas
 
 After logging out, Now choose the menu as shown below:
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/6e32d6f9-f39f-48a4-b44b-aecb2741ee22)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/c59c6632-0602-43b8-acf5-45db29aadb64)
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/df11cb8c-d072-41ca-ae5f-425de8ed0b8e)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/5ad71c6f-d1b6-49e9-b141-b981ffbe1342)
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/820bcce2-b310-47a4-bc43-79db8c31aa37)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/27ed6626-3cfd-4dfd-b584-66079ebd17e1)
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/3d0e3bd8-16ec-46a5-80ea-6a178925691d)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/774339db-802b-49c4-aa95-8ad53113006b)
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/1d3ed2fe-e274-4336-9080-684d661e48d1)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/6bad4597-f897-429f-9182-cc52072552a1)
 
 From this point, all our attack vectors will be performed in the URL section of the page using the Union-Based technique.There are two different ways to discover how many columns are selected by the original 
 
 query. The first is to infuse an “ORDER BY” statement indicating a column number. Given the column number specified is higher than the number of columns in the “SELECT” statement, an error will be returned.
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/13193916-4e7b-401a-aa82-20c7464d84ec)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/6a1453a5-a9fd-43d5-8cdb-40bce9714d96)
 
 Since we do not know the number of columns, we start at 1. To find the exact amount of columns, the number is incremented until an error related to the “ORDER BY” clause is returned. In this example, we 
 
@@ -113,29 +113,29 @@ The browser url of this info page need to be modified with the url as below:
 
 http://192.168.43.145/mutillidae/index.php?page=user-info.php&username=ganesh%27order%20by%206%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/83543d64-bdf9-4a98-b80a-62dc4719b3e7)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/f3878f33-aaad-45e3-a651-fa8f071ff142)
 
 After adding the order by 6 into the existing url , the following error statement will be obtained:
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/2e3a70a0-7b2a-48c6-9514-e8012d0c12c6)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/442cf7ef-c63f-4bf7-9881-be173b76199d)
 
 When we ordered by 5, it worked and displayed some information. It means there are five columns that we can work with. Following screenshot shows that the url modified to have statement added with ordered by 5 
 
 replacing 6.
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/36f930ad-1e06-4c2c-9f4e-194b3db334f4)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/b3faf730-55c2-4d08-8ce5-ad191975935a)
 
  As it is having 5 columns the query worked fine and it provides the correct result
  
- ![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/e4ebaec7-82a3-45b5-9b92-3aac3115c331)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/e45374f5-fda7-4f6c-99d0-48d43bf3646c)
 
  Instead of using the "order by" option, let’s use the "union select" option and provide all five columns. Ex: (union select 1,2,3,4,5).
  
- ![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/276ea21e-2539-4de7-b202-f50fa9c73042)
+ ![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/42e6a910-9904-4297-a64d-5ceca4321ff2)
 
  As given in the screenshot below columns 2,3,4 are usable in which we can substitute any sql commands to extract necessary information.
 
- ![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/ed5878ba-96ab-4ab1-91ce-38ba8f1a2043)
+ ![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/c335915c-3766-4431-ad43-b7e975cd5059)
 
  Now we will substitute some few commands like database(), user(), version() to obtain the information regarding the database name, username and version of the database.
 
@@ -156,7 +156,7 @@ http://192.168.43.145/mutillidae/index.php?page=user-
 
 info.php&username=ganesh%27union%20select%201,table_name,null,null,5%20from%20information_schema.tables%20where%20table_schema=%27owasp10%27%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/46bd8952-514e-4db6-99b3-44b60d69495a)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/c3a28c5b-de1c-4c22-95c2-0ebfdf464079)
 
 The url once executed will  retrieve table names from the “owasp 10” database.
 
@@ -177,7 +177,7 @@ http://192.168.43.145/mutillidae/index.php?page=user-
 
 info.php&username=ganesh%27union%20select%201,column_name,null,null,5%20from%20information_schema.columns%20where%20table_name=%27accounts%27%23&password=&user-info-php-submit-button=View+Account+Details
 
-![image](https://github.com/AmirthaRoopaS/sqlinjection/assets/143496311/43499f8b-61e3-429e-aec0-fbac321da4d6)
+![image](https://github.com/Karthikeyan21001828/sqlinjection/assets/93427303/4b9dc0b2-61de-4d65-aa27-32a8947d883b)
 
 Once we discovered all available column names, we can extract information from them by just adding those column names in our query sentence.
 
